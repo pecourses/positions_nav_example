@@ -1,0 +1,70 @@
+
+
+/*.container {*/
+
+/*    !*background-image: url("https://i.ytimg.com/vi/DUZCedq9a4Q/maxresdefault.jpg");*!*/
+/*    !*background-size: cover;*!*/
+/*    !*background-repeat: no-repeat;*!*/
+/*}*/
+
+
+:root {
+    --navigation-main-color: yellowgreen;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation {
+    background-color: rebeccapurple;
+    position: relative;
+}
+
+.navigation li {
+    min-width: 100px;
+    display: inline-block;
+    transition: all .25s ease-in-out;
+}
+
+.navigation a {
+    display: inline-block;
+    padding: 10px;
+}
+
+li:hover {
+    background-color: var(--navigation-main-color);
+}
+
+.subNav {
+    color: white;
+    background-color: rebeccapurple;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.subNav> li:hover{
+    background-color: var(--navigation-main-color);
+}
+
+.subNav > li {
+    display: block;
+}
+
+.navigation > li:hover .subNav {
+    display: block;
+}
+
+.childNav {
+    display: none;
+    top: 0;
+    left: 100%;
+    background-color: rebeccapurple;
+    position: absolute;
+}
+
+.subNav > li:hover .childNav{
+    display: block;
+}
