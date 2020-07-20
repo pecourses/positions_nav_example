@@ -68,3 +68,7 @@ li:hover {
 .subNav > li:hover .childNav{
     display: block;
 }
+
+.subNav > li {
+    position: relative;
+}
